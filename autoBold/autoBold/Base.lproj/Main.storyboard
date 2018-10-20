@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="autoboldo" translatesAutoresizingMaskIntoConstraints="NO" id="iGN-5S-UDh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="autobold" translatesAutoresizingMaskIntoConstraints="NO" id="iGN-5S-UDh">
                                 <rect key="frame" x="70" y="32" width="275" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -33,6 +33,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="autoboldo" width="480" height="323.27999877929688"/>
+        <image name="autobold" width="841.67999267578125" height="566.8800048828125"/>
     </resources>
 </document>
