@@ -14,7 +14,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+   
+    
+    @IBOutlet weak var carText: UITextField!
+    
+    @IBAction func EnterInfo(_ sender: Any) {
+       
+        let textInfo = carText.text!;
+        let parsedInf = textInfo.components(separatedBy: ",");
+        print(parsedInf)
+    }
+    
 }
 
