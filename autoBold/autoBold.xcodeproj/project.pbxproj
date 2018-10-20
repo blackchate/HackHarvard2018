@@ -13,9 +13,12 @@
 		B3164E8C217AF99B005CD46C /* autoBold.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B3164E8A217AF99B005CD46C /* autoBold.xcdatamodeld */; };
 		B3164E8E217AF9A3005CD46C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3164E8D217AF9A3005CD46C /* Assets.xcassets */; };
 		B3164E91217AF9A3005CD46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3164E8F217AF9A3005CD46C /* LaunchScreen.storyboard */; };
+		E7CF1CA1B0A58EB852891FC8 /* libPods-autoBold.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DD04B1CBD005FFB37BD3DD /* libPods-autoBold.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		291F4F4447B3BB29E66B12EA /* Pods-autoBold.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autoBold.release.xcconfig"; path = "Pods/Target Support Files/Pods-autoBold/Pods-autoBold.release.xcconfig"; sourceTree = "<group>"; };
+		63DD04B1CBD005FFB37BD3DD /* libPods-autoBold.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-autoBold.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3164E80217AF99B005CD46C /* autoBold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autoBold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3164E83217AF99B005CD46C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3164E85217AF99B005CD46C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		B3164E8D217AF9A3005CD46C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3164E90217AF9A3005CD46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3164E92217AF9A3005CD46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0F3EEC6A650CB561734C395 /* Pods-autoBold.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-autoBold.debug.xcconfig"; path = "Pods/Target Support Files/Pods-autoBold/Pods-autoBold.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7CF1CA1B0A58EB852891FC8 /* libPods-autoBold.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		161BF0D2CB133309DBC0DF10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0F3EEC6A650CB561734C395 /* Pods-autoBold.debug.xcconfig */,
+				291F4F4447B3BB29E66B12EA /* Pods-autoBold.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		44BA0394487026C741E15312 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63DD04B1CBD005FFB37BD3DD /* libPods-autoBold.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B3164E77217AF99A005CD46C = {
 			isa = PBXGroup;
 			children = (
 				B3164E82217AF99B005CD46C /* autoBold */,
 				B3164E81217AF99B005CD46C /* Products */,
+				161BF0D2CB133309DBC0DF10 /* Pods */,
+				44BA0394487026C741E15312 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3164E95217AF9A3005CD46C /* Build configuration list for PBXNativeTarget "autoBold" */;
 			buildPhases = (
+				5173CDE730C79009119335F4 /* [CP] Check Pods Manifest.lock */,
 				B3164E7C217AF99B005CD46C /* Sources */,
 				B3164E7D217AF99B005CD46C /* Frameworks */,
 				B3164E7E217AF99B005CD46C /* Resources */,
+				CEFAA435230C612767CB3838 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5173CDE730C79009119335F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-autoBold-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEFAA435230C612767CB3838 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-autoBold/Pods-autoBold-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-autoBold/Pods-autoBold-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B3164E7C217AF99B005CD46C /* Sources */ = {
@@ -284,6 +359,7 @@
 		};
 		B3164E96217AF9A3005CD46C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0F3EEC6A650CB561734C395 /* Pods-autoBold.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +377,7 @@
 		};
 		B3164E97217AF9A3005CD46C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 291F4F4447B3BB29E66B12EA /* Pods-autoBold.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
