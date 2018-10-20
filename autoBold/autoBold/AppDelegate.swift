@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  autoBold
 //
-//  Created by Furaha Damien on 2018-10-20.
+//  Created by Furaha Damien, Emmanuel Onsongo,  on 2018-10-20.
 //  Copyright © 2018 curtesy of damien. All rights reserved.
 //
 
