@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  autoBold
 //
-//  Created by Furaha Damien on 2018-10-20.
+//  Created by Furaha Damien, Emmanuel Onsongo, Alex Lo on 2018-10-20.
 //  Copyright © 2018 curtesy of damien. All rights reserved.
 //
 
@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     }
     
    
-    
     @IBOutlet weak var carText: UITextField!
     
     @IBAction func EnterInfo(_ sender: Any) {
@@ -24,6 +23,8 @@ class ViewController: UIViewController {
         let textInfo = carText.text!;
         let parsedInf = textInfo.components(separatedBy: ",");
         print(parsedInf)
+        
+        self.performSegue(withIdentifier: "Scene1", sender: self)
     }
     
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61ACB41B217C11CE008DDD37 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61ACB41A217C11CE008DDD37 /* SecondViewController.swift */; };
 		B3164E84217AF99B005CD46C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3164E83217AF99B005CD46C /* AppDelegate.swift */; };
 		B3164E86217AF99B005CD46C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3164E85217AF99B005CD46C /* ViewController.swift */; };
 		B3164E89217AF99B005CD46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3164E87217AF99B005CD46C /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		61ACB41A217C11CE008DDD37 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B3164E80217AF99B005CD46C /* autoBold.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = autoBold.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3164E83217AF99B005CD46C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3164E85217AF99B005CD46C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				B3164E83217AF99B005CD46C /* AppDelegate.swift */,
 				B3164E85217AF99B005CD46C /* ViewController.swift */,
+				61ACB41A217C11CE008DDD37 /* SecondViewController.swift */,
 				B3164E87217AF99B005CD46C /* Main.storyboard */,
 				B3164E8D217AF9A3005CD46C /* Assets.xcassets */,
 				B3164E8F217AF9A3005CD46C /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61ACB41B217C11CE008DDD37 /* SecondViewController.swift in Sources */,
 				B3164E86217AF99B005CD46C /* ViewController.swift in Sources */,
 				B3164E84217AF99B005CD46C /* AppDelegate.swift in Sources */,
 				B3164E8C217AF99B005CD46C /* autoBold.xcdatamodeld in Sources */,
